@@ -1,3 +1,4 @@
+from eyezah import *
 from eyezah.engine import *
 from eyezah.world import Voxels
 
