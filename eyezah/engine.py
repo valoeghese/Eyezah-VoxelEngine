@@ -4,11 +4,11 @@ import eyezah.world
 _base_url = "http://server.eyezah.tk:8002/voxelengine/api/"
 
 class Engine:
-    def __init__(self, name):
-        self.engineloc = "?engine=" + name
+    def __init__(self, token):
+        self.engineloc = "?token=" + token
 
     def send(self, typ, data):
-        print(_base_url + typ + self.engineloc + (parse.urlencode(data) if data is not None else ""))
+        # print(_base_url + typ + self.engineloc + (parse.urlencode(data) if data is not None else ""))
         return request.urlopen(_base_url + typ + self.engineloc + (("&" + parse.urlencode(data)) if data is not None else ""))
 
     """

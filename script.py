@@ -4,7 +4,7 @@ from eyezah.world import Voxels
 
 import time
 
-mekal = Engine("mekal-engine")
+mekal = Engine(input())
 
 print(mekal.move(UP).read())
 time.sleep(1)
