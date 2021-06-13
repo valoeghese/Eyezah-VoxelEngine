@@ -1,5 +1,5 @@
 from urllib import request, parse
-import eyezah.world
+import voxel.world
 
 _base_url = "http://server.eyezah.tk:8002/voxelengine/api/"
 
@@ -27,7 +27,7 @@ class Engine:
     Sets a data voxel with the specified data string in the direction provided
     """
     def set_data(self, direction, data):
-        return self.send("voxel-set", {'direction': direction, 'type': eyezah.world.Voxels.DATA, 'data': data})
+        return self.send("voxel-set", {'direction': direction, 'type': voxel.world.Voxels.DATA, 'data': data})
 
     """
     Retrieve Data in a Status Around the Engine

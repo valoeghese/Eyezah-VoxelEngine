@@ -1,5 +1,5 @@
-from eyezah.world import *
-from eyezah.engine import *
+from voxel.world import *
+from voxel.engine import *
 
 NORTH = "north"
 SOUTH = "south"

@@ -1,4 +1,4 @@
-from eyezah import *
+from voxel import *
 
 import time
 
