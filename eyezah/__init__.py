@@ -1,5 +1,5 @@
-import eyezah.world
-import eyezah.engine
+from eyezah.world import *
+from eyezah.engine import *
 
 NORTH = "north"
 SOUTH = "south"
